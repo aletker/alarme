@@ -22,5 +22,23 @@ public class AlarmeTest {
 		verify(exercito).suporteTragedia();
 
 	}
+	
+	@Test
+	public void maremotoForte() {
+
+		// Cria o mock
+		GuardaCosteira exercito = mock(GuardaCosteira.class);
+
+		// Prepara o ambiente
+		Alarme alarme = new Alarme();
+		alarme.setExercito(exercito);
+
+		// Efetua o estímulo
+		alarme.tremorDetectado(8, true);
+
+		// Verificar se os mocks foram acionados
+		verify(exercito).suporteTragedia();
+
+	}
 
 }

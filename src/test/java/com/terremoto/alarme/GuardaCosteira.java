@@ -1,6 +1,6 @@
 package com.terremoto.alarme;
 
-public interface Exercito {
+public interface GuardaCosteira {
 
 	void suporteTragedia();
 
