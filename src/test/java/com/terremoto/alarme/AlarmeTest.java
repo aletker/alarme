@@ -27,17 +27,35 @@ public class AlarmeTest {
 	public void maremotoForte() {
 
 		// Cria o mock
-		GuardaCosteira exercito = mock(GuardaCosteira.class);
+		GuardaCosteira guardaCosteira = mock(GuardaCosteira.class);
 
 		// Prepara o ambiente
 		Alarme alarme = new Alarme();
-		alarme.setExercito(exercito);
+		alarme.setGuardaCosteira(guardaCosteira);
 
 		// Efetua o estímulo
-		alarme.tremorDetectado(8, true);
+		alarme.tremorDetectado(8, false);
 
 		// Verificar se os mocks foram acionados
-		verify(exercito).suporteTragedia();
+		verify(guardaCosteira).suporteTragedia();
+
+	}
+	
+	@Test
+	public void quaimada() {
+
+		// Cria o mock
+		CorpoDeBombeiros corpoDeBombeiros = mock(CorpoDeBombeiros.class);
+
+		// Prepara o ambiente
+		Alarme alarme = new Alarme();
+		alarme.setCorpoDeBombeiros(corpoDeBombeiros);
+
+		// Efetua o estímulo
+		alarme.queimadaDetectad();
+
+		// Verificar se os mocks foram acionados
+		verify(corpoDeBombeiros).alertaIncendio();
 
 	}
 
