@@ -5,5 +5,8 @@ package com.terremoto.alarme;
  * 
  */
 public class Alarme {
+	public void test(){
+		
+	}
 
 }
