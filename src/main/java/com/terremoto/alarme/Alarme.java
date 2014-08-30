@@ -5,7 +5,16 @@ package com.terremoto.alarme;
  * 
  */
 public class Alarme {
-	public void test(){
+
+	private Exercito exercito;
+
+	public void tremorDetectado(int magnitude, boolean terrestre) {
+		exercito.suporteTragedia();
+		
+	}
+
+	public void setExercito(Exercito exercito) {
+		this.exercito = exercito;
 		
 	}
 
