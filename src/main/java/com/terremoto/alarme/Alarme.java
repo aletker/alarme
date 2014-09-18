@@ -1,7 +1,7 @@
 package com.terremoto.alarme;
 
 /**
- * Hello world!
+ * Hello world!- alterado git
  * 
  */
 public class Alarme {
