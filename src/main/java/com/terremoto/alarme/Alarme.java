@@ -2,6 +2,7 @@ package com.terremoto.alarme;
 
 /**
  * Hello world! - alterado eclipse
+ * alterado git
  * 
  */
 public class Alarme {
